@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CivicTrack — Smart Community Issue Reporting Platform
 
 > **A modern, transparent GovTech platform empowering citizens to report local civic issues (potholes, streetlights, garbage accumulation, water supply leaks), elevate critical community priorities through democratic upvoting, and verify government resolution with photographic proof and tamper-resistant audit timelines.**
@@ -279,3 +280,7 @@ To persist data permanently across restarts:
 4. **Administrative Console:** Log out and log in with the 1-click **Demo Admin** button (`admin@civictrack.org` / `Admin@12345`). Navigate to the **Admin Portal**. Show the Recharts category breakdown and live activity stream.
 5. **Status Transition & Resolution Proof:** In the issue table, click "Update" on a pending issue. Transition it to **In Progress** with an inspection note, then transition to **Resolved** with a public resolution note and proof image.
 6. **Audit Verification:** Open the resolved issue details page to verify the permanent, chronological resolution timeline with timestamps and officer credentials.
+=======
+# Civic-track
+Smart Community Issue Reporting Platform
+>>>>>>> 834232efa39be0b9ee5a3f2e6169e0383ca29a2d
