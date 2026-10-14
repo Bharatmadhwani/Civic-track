@@ -11,9 +11,15 @@ export const connectDB = async () => {
       serverSelectionTimeoutMS: 3000,
     });
     console.log(`[Database] Connected to MongoDB: ${conn.connection.host}/${conn.connection.name}`);
-    return conn;
   } catch (err) {
     console.warn(`[Database] Could not connect to MongoDB at "${uri}": ${err.message}`);
+
+    if (process.env.VERCEL) {
+      throw new Error(
+        `MongoDB connection failed on Vercel: ${err.message}. Please configure MONGODB_URI in your Vercel Project Environment Variables with a valid MongoDB Atlas connection string.`
+      );
+    }
+
     console.log('[Database] Attempting fallback to embedded In-Memory MongoDB for seamless demo/testing...');
 
     try {
